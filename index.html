@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <!--internal css-->
+     <!-- selectors in css -->
+    <style>
+        
+     h2{
+        color: brown;
+        background-color: azure;
+     }
+     *{
+        color: blue;
+        font-size: medium;
+       
+     }
+    
+     .description{
+        color: orange;
+        
+     }
+     #selectors{
+        color: green;
+        font-size: 25px;
+        background-color:plum;
+     }
+     h2,.description{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     }
+     
+    a:hover{
+        color: purple;
+    }
+    
+    :link{
+        color: violet;
+
+    }
+
+    a:visited{
+        color: black;
+    }
+    li:first-child{
+        color: greenyellow;
+
+    }
+    li:last-child{
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+    }
+    li:nth-child(5){
+        color: orangered;
+    }
+    .description::before{
+        content: "style" ;
+        color: black;
+        
+    }
+    .description::after{
+        content: "selectors";
+        color: rebeccapurple
+    }
+    .lorem::first-line{
+        background-color: black;
+
+    }
+    .lorem::first-letter{
+        color: green;
+    }
+    [title]{
+        color: purple;
+    }
+    [placeholder]{
+        color: blue;
+    }
+   
+    </style>
+</head>
+<body>
+    
+    <h2>Welcome To CSS</h2> <!-- tag selector or element slector -->
+    <p>CSS stands for Cascading Style Sheets</p> <!-- global selector or universal slector-->
+    <!-- class selector -->
+    <p class="description">CSS describes how HTML elements are to be displayed on screen, paper, or in other media.</p>
+    <p>CSS describes how HTML elements are to be displayed on screen, paper, or in other media.</p>
+    <p>External stylesheets are stored in CSS files.</p>
+     
+    <!--group selectors are used here are h2 and second p tag -->
+    <!-- ID selectors -->
+
+    <div id="selectors">Types of selectors</div>
+    <!-- pseudo-class selectors-->
+    <ol class="selector">
+        <li>Global selector</li>
+        <li>Tag selector</li>
+        <li>Class selector</li>
+        <li>ID selector</li>
+        <li>Group selector</li>
+        <li>pseudo selector</li>
+    </ol>
+    <a href="#" >List of selectors</a><br>
+    <a href="https://www.w3schools.com/css/css_pseudo_classes.asp">Types of pseudo-class selectors</a><br>
+    <a href="https://www.w3schools.com/css/css_syntax.asp">css introduction</a>
+
+    <!--inline css-->
+    <p class="lorem" style="width: 100px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque deserunt officia totam, saepe repellendus assumenda animi minima facilis impedit tenetur similique necessitatibus aliquid ut dignissimos sint? Perferendis iusto hic nulla?</p>
+
+    <input type="text" name="firstname" placeholder="firstname" >
+    <button class="btn" title="clik me">submit</button>
+</body>
+</html>
