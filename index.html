@@ -55,7 +55,7 @@
         color: orangered;
     }
     .description::before{
-        content: "style" ;
+        content: "word" ;
         color: black;
         
     }
@@ -78,22 +78,25 @@
     }
     
     input[required]{
-        background-color: lightcyan;
+        background-color: skyblue
     }
    
-    /*input[name = "Email"]{
+    input[name = "Email"]{
         border-color: red;
     }
    img[alt ^= "p"]{
-    width: 100px;
-    height: 100px;
-   } startswith*/
+    width: 150px;
+    height: 150px;
+   } 
+   button[class $="n"]{
+    border-color:blue;
+   }
    img[alt $="c"]{
     width: 200px;
     height: 200px;
    }
    input[type = "text"]{
-    border-radius: 20%;
+    border-radius: 30%;
    }
 
    div>h3{
@@ -106,11 +109,12 @@
 
    h3~p{
     color: blueviolet;
-   }
-
-   div p{
     background-color: aqua;
    }
+
+  .mainparent h4{
+    color:red;
+  }
 
 
     </style>
@@ -149,6 +153,7 @@
     <input type="email" name="Email" placeholder="example@gmail.com" required>
     <input type="text" name="lastname" placeholder="lastname">
     <button class="btn" title="clik me">submit</button>
+     <button class="btn" title="clik me">submit</button>
     <img src="https://images.pexels.com/photos/87651/earth-blue-planet-globe-planet-87651.jpeg" alt="pic">
     <img src="https://images.pexels.com/photos/1777023/pexels-photo-1777023.jpeg" alt="pic" >
     
