@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS</title>
+    <link rel="stylesheet" href="./style.css">
     <!--internal css-->
      <!-- selectors in css -->
     <style>
@@ -12,11 +13,11 @@
         color: brown;
         background-color: azure;
      }
-     *{
+    /* *{
         color: blue;
         font-size: medium;
        
-     }
+     }*/
     
      .description{
         color: orange;
@@ -75,7 +76,43 @@
     [placeholder]{
         color: blue;
     }
+    
+    input[required]{
+        background-color: lightcyan;
+    }
    
+    /*input[name = "Email"]{
+        border-color: red;
+    }
+   img[alt ^= "p"]{
+    width: 100px;
+    height: 100px;
+   } startswith*/
+   img[alt $="c"]{
+    width: 200px;
+    height: 200px;
+   }
+   input[type = "text"]{
+    border-radius: 20%;
+   }
+
+   div>h3{
+    color: green;
+    background-color: black;
+   }
+   h3+p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   }
+
+   h3~p{
+    color: blueviolet;
+   }
+
+   div p{
+    background-color: aqua;
+   }
+
+
     </style>
 </head>
 <body>
@@ -106,8 +143,26 @@
 
     <!--inline css-->
     <p class="lorem" style="width: 100px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque deserunt officia totam, saepe repellendus assumenda animi minima facilis impedit tenetur similique necessitatibus aliquid ut dignissimos sint? Perferendis iusto hic nulla?</p>
-
+   
+    <!--attribute slectors -->
     <input type="text" name="firstname" placeholder="firstname" >
+    <input type="email" name="Email" placeholder="example@gmail.com" required>
+    <input type="text" name="lastname" placeholder="lastname">
     <button class="btn" title="clik me">submit</button>
+    <img src="https://images.pexels.com/photos/87651/earth-blue-planet-globe-planet-87651.jpeg" alt="pic">
+    <img src="https://images.pexels.com/photos/1777023/pexels-photo-1777023.jpeg" alt="pic" >
+    
+
+    <!-- combinators selectors-->
+    <div class="mainparent">
+        <div>
+            <h4>grand child</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut modi vel tempore earum impedit dignissimos facere et autem maxime.</p>
+        </div>
+        <h3 class="child" >Attribute selector </h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, quod?</p>
+        <span>Lorem ipsum dolor sit amet.</span>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit eum quae eos!</p>
+    </div>
 </body>
 </html>
